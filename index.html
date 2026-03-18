@@ -34,6 +34,13 @@ section{padding:80px 0}@media(min-width:768px){section{padding:100px 0}}@media(m
 /* Fallback if JS never runs */
 .no-js .rv{opacity:1;transform:none}
 
+.ph {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 /* NAV */
 #nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nh);display:flex;align-items:center;transition:background .3s,box-shadow .3s}
 #nav.sc{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);box-shadow:var(--sh-s);border-bottom:1px solid var(--bdr)}
@@ -194,7 +201,15 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.015;z
             </div>
         </div>
         <div class="hiw rv" data-d="2">
-            <div class="hif"><div class="ph"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Your Photo</span></div></div>
+            <div class="">
+              <div class="ph">
+                  <img 
+                    src="https://res.cloudinary.com/dkj22lm1g/image/upload/f_auto,q_auto/v1773835410/Profile-Photo_itvxqs.webp" 
+                    alt="Your Photo"
+                    class="w-full h-full object-cover rounded-full"
+                  >
+                </div>
+              </div>
             <div class="hbd" style="top:-8px;left:-20px"><div class="hbdd" style="background:#4AE09A"></div>Open to Opportunities</div>
             <div class="hbd" style="bottom:50px;right:-28px"><div class="hbdd" style="background:#D4A017"></div>BSc. (Hons)</div>
         </div>
